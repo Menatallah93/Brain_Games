@@ -4,8 +4,8 @@ var imgs = ['pic9a.png', 'pic1a.png', 'pic7a.png',
     'pic2a.png', 'pic14.png', 'pic3a.png', 'pic9a.png', 'pic1a.png', 'pic7a.png',
     'pic2a.png', 'pic14.png', 'pic3a.png'];
 
-var rightSound = new Audio("righ.wav");
-var wrongSound = new Audio("wrong.wav");
+var rightSound = new Audio("assets/media/matchCard/righ.wav");
+var wrongSound = new Audio("assets/media/matchCard/wrong.wav");
 var main = document.getElementById("main");
 var allDiv = document.getElementsByClassName("pics");
 var correctCount = 0;
@@ -17,7 +17,7 @@ function drawImage() {
     var len = imgs.length;
     for (var i = 0; i < len; i++) {
         var random = Math.floor(Math.random() * imgs.length);
-        main.innerHTML += '<div class="pics"><img src="' + imgs[random] + '"></div>';
+        main.innerHTML += '<div class="pics"><img src="assets/images/matchCard/' + imgs[random] + '"></div>';
         imgs.splice(random, 1);
 
 

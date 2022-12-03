@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> 🧠Memory Card Game </title>
-  <link rel="stylesheet" href="matchCard.css" />
+  <title>🧠Memory card game </title>
+  <link rel="stylesheet" href="assets/css/matchCard.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Roboto&display=swap"
@@ -14,23 +14,18 @@
 </head>
 
 <body>
-
   <div class="video-wrapper ">
     <video autoplay muted loop>
-      <source src="prov1.mp4" type="video/mp4" />
+      <source src="assets/media/prov1.mp4" type="video/mp4" />
     </video>
-    <header id="header" > 
-      <!--<span id="moves">0</span>moves-->
-      <span id="time"></span>
-      <button id="click" onclick="start()">New Game</button>
-      <span id="score">Score:</span>
-    </header>
-    
+    <div class="overlay"></div>
+    <div class="home-content">
+      <h1>Memory card game </h1>
+      <button onclick="window.open('file:///G:/ITI/ITI%209%20month%20courses/JavaScript/Brain_Games/matchCardGame.html');" id="go">START</button>
+    </div>
+
   </div>
-
-  <section id="main"></section>
-
-  <script src="matchCard.js"></script>
+  <script src="assets/js/matchCard.js"></script>
 </body>
 
 </html>

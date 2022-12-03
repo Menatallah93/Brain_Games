@@ -1,3 +1,4 @@
+
 var rows = 3;
 var columns = 3;
 
@@ -18,7 +19,7 @@ window.onload = function() {
             //<img id="0-0" src="1.jpg">
             let tile = document.createElement("img");
             tile.id = r.toString() + "-" + c.toString();
-            tile.src = imgOrder.shift() + ".jpg";
+            tile.src = "assets/images/puzzel/" + imgOrder.shift() + ".jpg";
 
             //DRAG FUNCTIONALITY
             tile.addEventListener("dragstart", dragStart);  //click an image to drag
@@ -55,7 +56,7 @@ function dragDrop() {
 }
 
 function dragEnd() {
-    if (!otherTile.src.includes("3.jpg")) {
+    if (!otherTile.src.includes("assets/images/puzzel/3.jpg")) {
         return;
     }
 

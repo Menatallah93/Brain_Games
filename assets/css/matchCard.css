@@ -162,7 +162,7 @@ div.pics {
   float: left;
   position: relative;
   bottom: 550px;
-  background: url(cover.jpeg);
+  background: url('../images/matchCard/cover.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10%;
