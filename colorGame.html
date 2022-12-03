@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Color Guess</title>
+    <link rel="icon" type="image/x-icon" href="img/crazy1.png">
+
+    <link rel="stylesheet" href="css/colorGame.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="background-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+
+        <section id="Container">
+            <img src="svg/correct.svg" id="checkmark">
+            <img src="svg/incorrect.svg" id="wrong">
+
+            <div class="top">
+                <button id="start" onclick="startGame()">Start</button>
+
+                <div id="color1" class="colorText color1"></div>
+                <div id="color2" class="colorText color2"></div>
+                <br>
+                <br>
+            </div>
+            <div class="bottom">
+                <div class="row">
+                    <div id="Blue" class="color blue"></div>
+                    <div id="Red" class="color red"></div>
+                </div>
+                <div class="row">
+                    <div id="Green" class="color green"></div>
+                    <div id="Yellow" class="color yellow"></div>
+                </div>
+            </div>
+            <span id="correct"></span>
+            <span id="time"></span>
+
+
+        </section>
+
+
+</body>
+<script src="js/colorGame.js"></script>
+
+</html>
