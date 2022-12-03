@@ -1,0 +1,218 @@
+
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        text-shadow:none;
+        color:#0e3742;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#fff;
+        text-shadow:0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+    } 
+}
+
+.Title1
+{
+    font-size: 3em;
+    font-family:Verdana;
+    text-align: center;
+    color:brown;
+    position: relative;
+    letter-spacing: 15px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline:none;
+    animation:animate 5s linear infinite;
+} 
+body
+{
+   overflow-x: hidden;
+   overflow-y:hidden ;
+   background: linear-gradient(-45deg,  #23d5ab, rgba(165,42,42,1), #23d5ab);
+   background-size: 400% 400%;
+   animation: gradient 8s ease infinite;
+} 
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+#difficulty h3 ,#time h3{
+    font-family:Verdana;
+    color:brown;
+    border: 3px double bisque;
+    width: 50%;
+    background-color:whitesmoke;
+    border-radius: 35px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+#buttons{
+    transform: translate(0,400px);
+}
+#setup-game{
+    margin-left: 1030px;
+    margin-top: -245px;
+}
+#difficulty label ,#time label {
+    font-family:Verdana;
+    color:whitesmoke;
+    padding-left: 5px;
+    font-weight: bold;
+}
+#lives{
+    text-align: center;
+    font-family:Verdana;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: large;
+}
+#lives span{
+    color: #0e3742;
+}
+#start-btn{
+   transform: translate(110px,-270px);
+}
+#newGame-btn{
+    left:110px;
+    top:-200px;
+}
+#answer-btn{
+    left:110px;
+    top:-130px;
+}
+.styleButton{
+    border-radius: 35px;
+    padding: 5px;
+    width: 14%;
+    height: 36px;
+    font-family:Verdana;
+    color:brown;
+    font-weight: bold;
+    font-size: large;
+    background-color: whitesmoke;
+    border: 3px double bisque;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+#start-btn:hover{
+    animation:wiggle 2s linear infinite;
+    left:110px;
+    top:-280px;
+    border: 3px solid green;
+    box-shadow: 0px 15px 20px rgba(34, 139, 34, 0.4);
+    color:whitesmoke;
+    background-color: brown;
+}
+#newGame-btn:hover{
+    animation:wiggle 2s linear infinite;
+    left:110px;
+    top:-200px;
+    border: 3px solid green;
+    box-shadow: 0px 15px 20px rgba(34, 139, 34, 0.4);
+    color:whitesmoke;
+    background-color: brown;
+}
+#answer-btn:hover{
+    animation:wiggle 2s linear ;
+    left:110px;
+    top:-130px;
+    border: 3px solid green;
+    box-shadow: 0px 15px 20px rgba(34, 139, 34, 0.4);
+    color:whitesmoke;
+    background-color: brown;
+}
+@keyframes wiggle{
+    0%,7%{
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-15deg);
+    }
+    20%{
+        transform: rotateZ(10deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    30%{
+        transform: rotateZ(15deg)
+    }
+    35%{
+        transform: rotateZ(-4deg)
+    }
+    40%,100%{
+        transform: rotateZ(0);
+    }
+}
+#board{
+    display: grid;
+    grid-template-columns:repeat(9,40px);
+    grid-template-rows: repeat(9,40px);
+    margin-left: 550px;
+   
+}
+.tile{
+    color: darkolivegreen;
+    font-weight: bold;
+    font-size: large;
+    font-family:Verdana;
+    text-align: center;
+    padding-top: 4px ;
+    background-color: whitesmoke;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+.number{
+    color: darkolivegreen;
+    font-weight: bold;
+    font-size: large;
+    font-family:Verdana;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1.5px solid brown;
+    padding: 10px;
+    cursor: pointer;
+}
+#digits{
+    transform: translate(565px,130px);
+}
+#timer{
+    transform: translate(720px,-360px);
+    font-weight: bold;
+    font-size: large;
+    font-family:Verdana;
+    color:#0e3742;
+}
+.horizontal-line{
+    border-bottom: 3px solid darkolivegreen;
+}
+.vertical-line{
+    border-right: 3px solid darkolivegreen;
+}
+#livesRemaining{
+    font-weight: bold;
+}
+.number-selected {
+    background-color: gainsboro;
+}
+.timeHidden{
+    display: none;
+}
+.bodyStyle{
+    background-color:black;
+}

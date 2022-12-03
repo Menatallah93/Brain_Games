@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <link rel="icon" type="image/x-icon" href="sudoku.png">
+</head>
+
+<body>
+    <header> 
+        <br>
+        <h1 class="Title1">SUDOKU GAME</h1>
+        <p id="lives">You Have Only <span id="livesRemaining">10</span> Lives</p>
+        <br>
+      <div id="buttons">
+        <button id="start-btn" class="styleButton" onclick="startGame()">Start Game</button>
+        <button id="newGame-btn" class="styleButton" onclick="newGame()">Create New Game</button>
+        <button id="answer-btn" class="styleButton" onclick="answerGame()">Answer</button>
+      </div>
+    </header>
+    
+    <div id="board">
+
+        
+     </div>
+
+     <div id="setup-game">
+        <div id="difficulty">
+            <h3>Choose Difficulty </h3>
+
+            <input type="radio" name="diff" id="easy" checked>
+            <label for="easy">Easy</label>
+            
+            <input type="radio" name="diff" id="medium">
+            <label for="medium">Medium</label>
+            
+            <input type="radio" name="diff" id="hard">
+            <label for="hard">Hard</label>
+         
+        </div>
+        <div id="time">
+            <h3>Choose Time </h3>
+
+            <input type="radio" name="time" id="3-min" checked>
+            <label for="3-min">3 Minutes</label>
+
+            <input type="radio" name="time" id="5-min">
+            <label for="5-min">5 Minutes</label>
+
+            <input type="radio" name="time" id="10-min">
+            <label for="10-min">10 Minutes</label>
+        </div>
+        
+    </div>
+   <br>
+   <div id="status">
+    <p id="timer"> </p>
+   </div>
+   
+   <div id="digits">
+      
+   </div>
+ <div>
+    <audio id="win">
+        <source src="win.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lose">
+        <source src="lose.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="time_audio">
+        <source src="Time.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lives_audio">
+        <source src="lives.mp3" type="audio/mpeg">
+    </audio>
+ </div>
+
+    
+<script src="sudoku.js"></script>
+</body>
+
+</html>
+
+
