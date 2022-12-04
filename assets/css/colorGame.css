@@ -1,45 +1,64 @@
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
     overflow-x: none;
 }
 
-body{
+body {
     max-width: 300px;
     margin: auto;
     height: 98vh;
     overflow-y: hidden;
-    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 5s ease infinite;
+    position: relative;
 }
 
-.bottom{
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.bottom {
     display: flex;
 }
-.color{
+
+.color {
     width: 150px;
     height: 150px;
     transition: transform 300ms;
 }
 
-.color:hover{
+.color:hover {
     transform: scale(0.9);
 }
 
-.blue{
+.blue {
     background-color: blue;
 }
-.red{
+
+.red {
     background-color: red;
 }
-.green{
+
+.green {
     background-color: green;
 }
-.yellow{
+
+.yellow {
     background-color: yellow;
 }
 
-.top{
+.top {
     margin-top: 1rem;
     width: 300px;
     height: 200px;
@@ -47,45 +66,58 @@ body{
     text-align: center;
     z-index: 1000;
 }
-.colorText{
-    font: 3rem sans-serif; 
+
+.colorText {
+    font: 3rem sans-serif;
     display: none;
 }
 
-#time{
+#time {
     position: absolute;
     text-align: center;
     width: 300px;
-    font: 3rem sans-serif; 
+    font: 3rem sans-serif;
     color: aliceblue;
 }
-#correct{
+
+#correct {
     position: absolute;
     color: lawngreen;
     text-shadow: 0px 0px 10px black;
-    font: 3rem sans-serif; 
+    font: 3rem sans-serif;
 }
-#checkmark, #wrong{
+
+#checkmark,
+#wrong {
     pointer-events: none;
     position: absolute;
-    width: 10%;
-    left: 47%;
-    top:8%;
+    width: 25%;
+    left: 40%;
+    top: 18%;
     z-index: 10;
+    font-size: 100px;
     opacity: 0;
 }
 
-.fadeAway{
+.fadeAway {
     animation: fadeAway 500ms;
 }
 
-@keyframes fadeAway{
-    0%{opacity: 1}
-    50%{opacity: 1}
-    100%{opacity: 0}
+@keyframes fadeAway {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
-#start{
+#start {
     font-size: 2rem;
     height: 100px;
     padding: 0.5rem 2rem;
@@ -94,11 +126,11 @@ body{
     margin: 1rem auto;
     display: block;
 }
-#start{
+
+#start {
     background-color: lightgreen;
 }
-#start:hover{
-    background-color: aquamarine; 
+
+#start:hover {
+    background-color: aquamarine;
 }
-
-
