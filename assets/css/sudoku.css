@@ -189,13 +189,14 @@ body
     cursor: pointer;
 }
 #digits{
-    transform: translate(565px,130px);
+    transform: translate(565px,50px);
 }
+
 #timer{
-    transform: translate(720px,-360px);
+    transform: translate(720px,-380px);
     font-weight: bold;
-    font-size: large;
-    font-family:Verdana;
+    font-size: 27px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#0e3742;
 }
 .horizontal-line{

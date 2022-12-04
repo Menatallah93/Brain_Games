@@ -743,12 +743,14 @@ function selectTileHard() {
     }
     document.getElementById("livesRemaining").innerText = lives_Remaining;
 }
+
 function newGame() {
     clearPreviousBoard();
     clearNumbers();
     clearInterval(time);
     document.getElementById("timer").classList.add("timeHidden");
-    document.getElementById("livesRemaining").innerText=Conestlives_Remaining;
+    document.getElementById("livesRemaining").innerText = Conestlives_Remaining;
+    lives_Remaining = Conestlives_Remaining;
     setGame();
 }
 

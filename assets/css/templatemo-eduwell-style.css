@@ -249,7 +249,7 @@ header
 }
 
 .header-area {
-  background-image: url(../images/header-bg.png);
+  background-image: url(../images/homePage/header-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -699,7 +699,7 @@ section.main-banner {
 
 .main-banner .right-image::after {
   position: absolute;
-  background-image: url(../images/banner-right-dec.png);
+  background-image: url(../images/homePage/banner-right-dec.png);
   width: 378px;
   height: 378px;
   content: '';
@@ -709,7 +709,7 @@ section.main-banner {
 
 .main-banner .header-text::after {
   position: absolute;
-  background-image: url(../images/banner-left-dec.png);
+  background-image: url(../images/homePage/banner-left-dec.png);
   width: 214px;
   height: 429px;
   content: '';
@@ -765,7 +765,7 @@ section.our-games .section-heading p {
 section.our-games:before {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-left-dec.png);
+  background-image: url(../images/homePage/our-courses-left-dec.png);
   left: 45px;
   top: -140px;
   width: 291px;
@@ -776,7 +776,7 @@ section.our-games:before {
 section.our-games:after {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-right-dec.png);
+  background-image: url(../images/homePage/our-courses-right-dec.png);
   right: 45px;
   top: -140px;
   width: 291px;
@@ -920,7 +920,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.png);
+  background-image: url(../images/homePage/cta-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -967,7 +967,7 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/homePage/footer-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1217,7 +1217,7 @@ section.our-team .section-heading p {
 section.our-team:before {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-left-dec.png);
+  background-image: url(../images/homePage/our-courses-left-dec.png);
   left: 45px;
   top: -140px;
   width: 291px;
@@ -1228,7 +1228,7 @@ section.our-team:before {
 section.our-team:after {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-right-dec.png);
+  background-image: url(../images/homePage/our-courses-right-dec.png);
   right: 45px;
   top: -140px;
   width: 291px;
@@ -1301,7 +1301,7 @@ section.featured-product {
 section.featured-product:before {
   position: absolute;
   content: '';
-  background-image: url(../images/testimonials-left-dec.png);
+  background-image: url(../images/homePage/testimonials-left-dec.png);
   left: 0px;
   top: -140px;
   width: 593px;
@@ -1312,7 +1312,7 @@ section.featured-product:before {
 section.featured-product:after {
   position: absolute;
   content: '';
-  background-image: url(../images/testimonials-right-dec.png);
+  background-image: url(../images/homePage/testimonials-right-dec.png);
   right: 0px;
   bottom: -140px;
   width: 632px;

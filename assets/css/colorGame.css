@@ -8,13 +8,11 @@
 body{
     max-width: 300px;
     margin: auto;
+    height: 98vh;
+    overflow-y: hidden;
+    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
 }
 
-#Container{
-    position: relative;
-    z-index: 1000;
-    left: 40%;
-}
 .bottom{
     display: flex;
 }
@@ -71,9 +69,9 @@ body{
     pointer-events: none;
     position: absolute;
     width: 10%;
-    left: 5%;
-    top: -15%;
-    z-index: 10000;
+    left: 47%;
+    top:8%;
+    z-index: 10;
     opacity: 0;
 }
 
@@ -104,106 +102,3 @@ body{
 }
 
 
-
-
-/*######################### Animated BackGround #########################  */
-@keyframes move-background {
-    from {
-      -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-      -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-  }
-  @-webkit-keyframes move-background {
-    from {
-      -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-      -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-  }
-  
-  @-moz-keyframes move-background {    
-    from {
-      -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-      -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-  }
-  
-      @-webkit-keyframes move-background {
-    from {
-      -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-      -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-  }
-  
-  .background-container{
-    position: fixed;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right: 0;
-  }
-  
-  .stars {
-   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-   position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-      z-index: 0;
-  }
-  
-  .twinkling{
-    width:10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-    background-size: 1000px 1000px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 2;
-      
-      -moz-animation:move-background 70s linear infinite;
-    -ms-animation:move-background 70s linear infinite;
-    -o-animation:move-background 70s linear infinite;
-    -webkit-animation:move-background 70s linear infinite;
-    animation:move-background 70s linear infinite;
-    
-  }
-  
-  .clouds{
-    width:10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-    background-size: 1000px 1000px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 3;
-  
-     -moz-animation:move-background 150s linear infinite;
-    -ms-animation:move-background 150s linear infinite;
-    -o-animation:move-background 150s linear infinite;
-    -webkit-animation:move-background 150s linear infinite;
-    animation:move-background 150s linear infinite;
-  }
-  img{
-    height: 70vh;
-    width:70vh;
-    position: absolute;
-    z-index: 3;
-    right: 20px;
-  }
-
-
-  
